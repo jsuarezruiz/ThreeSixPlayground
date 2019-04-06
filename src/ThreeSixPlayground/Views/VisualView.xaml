@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ThreeSixPlayground.Views.VisualView"
+    Title="Visual">
+    <ContentPage.Content> 
+        <StackLayout>
+            <Label 
+                Text="Visual - Material controls" 
+                Margin="6, 12, 6, 0"/>
+            <BoxView 
+                BackgroundColor="Black" 
+                Margin="0,0,0,12" 
+                HeightRequest="1"/>
+            <StackLayout 
+                Visual="Material"
+                Margin="12, 0">
+                <Button 
+                    Text="ActivityIndicator" 
+                    Command="{Binding VisualCommand}" 
+                    CommandParameter="activityindicator"/>
+                <Button 
+                    Text="Button"
+                    Command="{Binding VisualCommand}" 
+                    CommandParameter="button"/>
+                <Button 
+                    Text="Cards" 
+                    Command="{Binding VisualCommand}" 
+                    CommandParameter="card"/>
+                <Button 
+                    Text="Editor" 
+                    Command="{Binding VisualCommand}" 
+                    CommandParameter="editor"/>
+                <Button 
+                    Text="Entry" 
+                    Command="{Binding VisualCommand}" 
+                    CommandParameter="entry"/>
+                <Button 
+                    Text="Picker" 
+                    Command="{Binding VisualCommand}"
+                    CommandParameter="picker"/>
+                <Button
+                    Text="Progress" 
+                    Command="{Binding VisualCommand}" 
+                    CommandParameter="progress"/>
+                <Button 
+                    Text="Slider" 
+                    Command="{Binding VisualCommand}" 
+                    CommandParameter="slider"/>
+                <Button 
+                    Text="Stepper" 
+                    Command="{Binding VisualCommand}"
+                    CommandParameter="stepper"/>
+            </StackLayout>   
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

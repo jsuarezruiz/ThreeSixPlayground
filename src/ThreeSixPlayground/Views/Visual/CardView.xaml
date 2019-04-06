@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ThreeSixPlayground.Views.Visual.CardView"
+    Title="Cards"
+    Visual="Material">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+                Padding="12">
+                <Label 
+                    Text="Default"/>
+                 <Frame 
+                    Padding="12">
+                    <StackLayout 
+                        Spacing="16">
+                        <Image 
+                            Source="sevilla05.jpg" 
+                            Margin="-12,-12,-12,0" 
+                            Aspect="AspectFill" />
+                        <Label
+                            Text="Lorem ipsum dolor sit amet" 
+                            FontSize="24" 
+                            TextColor="Black"/>
+                        <Label 
+                            Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                            TextColor="Gray" 
+                            FontSize="14" />
+                        <Button 
+                            Text="Lorem ipsun"
+                            HorizontalOptions="End" />
+                    </StackLayout>
+                </Frame>        
+                <Label 
+                    Text="Border"/>
+                 <Frame 
+                    BorderColor="Gray"
+                    Padding="12">
+                    <StackLayout 
+                        Spacing="16">
+                        <Image 
+                            Source="sevilla05.jpg" 
+                            Margin="-12,-12,-12,0" 
+                            Aspect="AspectFill" />
+                        <Label
+                            Text="Lorem ipsum dolor sit amet" 
+                            FontSize="24" 
+                            TextColor="Black"/>
+                        <Label 
+                            Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                            TextColor="Gray" 
+                            FontSize="14" />
+                        <Button 
+                            Text="Lorem ipsun"
+                            HorizontalOptions="End" />
+                    </StackLayout>
+                </Frame>        
+                <Label 
+                    Text="Shadow"/>
+                 <Frame 
+                    HasShadow="True"
+                    BorderColor="Orange"
+                    Padding="12">
+                    <StackLayout 
+                        Spacing="16">
+                        <Image 
+                            Source="sevilla05.jpg" 
+                            Margin="-12,-12,-12,0" 
+                            Aspect="AspectFill" />
+                        <Label
+                            Text="Lorem ipsum dolor sit amet" 
+                            FontSize="24" 
+                            TextColor="Black"/>
+                        <Label 
+                            Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                            TextColor="Gray" 
+                            FontSize="14" />
+                        <Button 
+                            BackgroundColor="Orange"
+                            Text="Lorem ipsun"
+                            HorizontalOptions="End" />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

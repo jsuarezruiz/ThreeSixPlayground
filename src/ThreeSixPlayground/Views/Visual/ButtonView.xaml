@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ThreeSixPlayground.Views.Visual.ButtonView"
+    Title="Button"
+    Visual="Material">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="12">
+            <Label 
+                Text="Default" />
+            <Button
+                Text="Enabled"/>   
+            <Button
+                Text="Disabled"
+                IsEnabled="False"/>        
+            <Label 
+                Text="Custom TextColor" />
+            <Button
+                TextColor="Lime"
+                Text="Enabled"/>   
+            <Button  
+                TextColor="Lime"
+                Text="Disabled"
+                IsEnabled="False"/>
+            <Label 
+                Text="Custom BackgroundColor" />
+            <Button
+                BackgroundColor="Red"
+                Text="Enabled"/>   
+            <Button  
+                BackgroundColor="Red"
+                Text="Disabled"
+                IsEnabled="False"/>
+            <Label 
+                Text="Custom BorderColor" />
+            <Button
+                BorderWidth="2"
+                BorderColor="Maroon"
+                BackgroundColor="Red"
+                Text="Enabled"/>   
+            <Button     
+                BorderWidth="2"
+                BorderColor="Maroon"
+                BackgroundColor="Red"
+                Text="Disabled"
+                IsEnabled="False"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

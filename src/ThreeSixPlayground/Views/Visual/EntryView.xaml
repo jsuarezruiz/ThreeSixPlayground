@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="ThreeSixPlayground.Views.Visual.EntryView"
+    Title="Entry"
+    Visual="Material">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="12">
+            <Label
+                Text="Default"/>
+            <Entry />  
+            <Label
+                Text="Placeholder"/>
+            <Entry
+                Placeholder="Some text..."
+                PlaceholderColor="Navy"/>   
+            <Label
+                Text="BackgroundColor"/>
+            <Entry
+                TextColor="White"
+                Placeholder="Some text..."
+                PlaceholderColor="White"
+                BackgroundColor="Gray"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

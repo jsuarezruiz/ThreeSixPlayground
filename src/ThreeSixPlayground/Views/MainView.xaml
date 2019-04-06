@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ThreeSixPlayground.Views.MainView"
+    Title="3.6">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button 
+                Text="FontIconSource"
+                Command="{Binding FontIconSourceCommand}"/>
+            <Button 
+                Text="PinsSource Map"
+                Command="{Binding PinsSourceCommand}"/>
+            <Button 
+                Text="ReadOnly Entry"
+                Command="{Binding ReadOnlyEntryCommand}"/>
+            <Button 
+                Text="Visual"
+                Command="{Binding VisualCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

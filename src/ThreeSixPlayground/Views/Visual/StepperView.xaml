@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="ThreeSixPlayground.Views.Visual.StepperView"
+    Title="Stepper"
+    Visual="Material">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="12">
+            <Label 
+                Text="Default"/>
+            <Stepper />   
+            <Label 
+                Text="Disabled"/>
+            <Stepper
+                BackgroundColor="Purple"
+                Minimum="0"
+                Maximum="10"
+                Value="5"
+                IsEnabled="False"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

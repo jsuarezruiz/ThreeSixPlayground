@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="ThreeSixPlayground.Views.Visual.ActivityIndicatorView"
+    Title="ActivityIndicator"      
+    Visual="Material">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="12">   
+            <Label 
+                Text="Default" />
+            <ActivityIndicator 
+                IsRunning="true"
+                HorizontalOptions="FillAndExpand" />
+            <ActivityIndicator 
+                IsRunning="false"
+                HorizontalOptions="FillAndExpand" />           
+            <Label 
+                Text="Custom Color" />  
+            <ActivityIndicator 
+                IsRunning="true"
+                Color="Orange"
+                HorizontalOptions="FillAndExpand" />
+            <ActivityIndicator 
+                IsRunning="false"    
+                Color="Orange"
+                HorizontalOptions="FillAndExpand" />      
+            <Label 
+                Text="Custom BackgroundColor" />  
+            <ActivityIndicator 
+                IsRunning="true"
+                Color="Orange"
+                BackgroundColor="Gray"
+                HorizontalOptions="FillAndExpand" />
+            <ActivityIndicator 
+                IsRunning="false"    
+                Color="Orange"
+                BackgroundColor="Gray"
+                HorizontalOptions="FillAndExpand" />    
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

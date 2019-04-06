@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="ThreeSixPlayground.Views.FontIconSourceView"
+    Title="FontIconSource">
+    <ContentPage.Content>
+        <StackLayout>     
+            <Label 
+                Text="FontImageSource - Glyph" 
+                Margin="6, 12, 6, 0"/>
+            <BoxView 
+                BackgroundColor="Black" 
+                Margin="0,0,0,12" 
+                HeightRequest="1"/>
+            <Image
+                HorizontalOptions="Center"
+                BackgroundColor="Gray"
+                Margin="12, 0">
+                <Image.Source>
+                <FontImageSource 
+                    Glyph="{Binding Glyph}"
+                    FontFamily="{OnPlatform iOS=Ionicons, Android=ionicons.ttf#}"
+                    Size="44"/>
+                </Image.Source>
+            </Image>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
